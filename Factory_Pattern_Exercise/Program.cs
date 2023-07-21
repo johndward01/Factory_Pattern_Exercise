@@ -18,4 +18,4 @@
 
 
 
-// TODO: Use the LoggerFactory to create each type of logger and then write 1 log foreach of the LOG LEVELS creatively
+// TODO: Use the LoggerFactory to create each type of custom logger and then write 1 log foreach of the LOG LEVELS creatively
