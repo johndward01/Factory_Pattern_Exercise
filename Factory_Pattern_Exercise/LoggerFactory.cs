@@ -8,7 +8,7 @@ public static class LoggerFactory
         {
             "console" => new ConsoleLogger(),
             "file" => new FileLogger(),
-            "database" => new DatabaseLogger(),
+            "db" => new DatabaseLogger(),
             _ => new ConsoleLogger(),
         };
     }
