@@ -2,10 +2,10 @@
 
 public interface ICustomLogger
 {
-    public void Trace();
-    public void Debug();
-    public void Information();
-    public void Warning();
-    public void Error();
-    public void Critical();
+    public void Trace(string logMessage);
+    public void Debug(string logMessage);
+    public void Information(string logMessage);
+    public void Warning(string logMessage);
+    public void Error(string logMessage);
+    public void Critical(string logMessage);
 }

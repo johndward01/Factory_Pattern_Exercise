@@ -2,33 +2,43 @@
 
 public class ConsoleLogger : ICustomLogger
 {
-    public void Critical()
+    public void Trace(string logMessage)
     {
-        throw new NotImplementedException();
+        Console.WriteLine($"Information: {DateTime.Now} {logMessage}");
     }
 
-    public void Debug()
+    public void Debug(string logMessage)
     {
-        throw new NotImplementedException();
+        Console.ForegroundColor = ConsoleColor.Green;
+        Console.WriteLine($"Information: {DateTime.Now} {logMessage}");
     }
 
-    public void Error()
+    public void Information(string logMessage)
     {
-        throw new NotImplementedException();
+        Console.ForegroundColor = ConsoleColor.Blue;
+        Console.WriteLine($"Information: {DateTime.Now} {logMessage}");        
     }
 
-    public void Information()
+    public void Warning(string logMessage)
     {
-        throw new NotImplementedException();
+        Console.ForegroundColor = ConsoleColor.Yellow;
+        Console.WriteLine($"Information: {DateTime.Now} {logMessage}");
     }
 
-    public void Trace()
+    public void Error(string logMessage)
     {
-        throw new NotImplementedException();
+        Console.ForegroundColor = ConsoleColor.DarkRed;
+        Console.WriteLine($"Information: {DateTime.Now} {logMessage}");
     }
 
-    public void Warning()
+    public void Critical(string logMessage)
     {
-        throw new NotImplementedException();
+        Console.ForegroundColor = ConsoleColor.Red;
+        Console.WriteLine($"Information: {DateTime.Now} {logMessage}");
     }
+
+
+
+
+
 }
