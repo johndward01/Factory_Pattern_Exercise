@@ -2,5 +2,8 @@
 
 public static class LoggerFactory
 {
-    public static ICustomLogger 
+    public static ICustomLogger CreateLogger(string logType)
+    {
+
+    }
 }
